@@ -1,6 +1,6 @@
-# Heka Deadlock Example
+## Heka Deadlock Example
 
-These plugins when run together with the example.toml cause heka to freeze.
+These plugins when run together with the example.toml cause heka to freeze. Most likely caused by using the framework the wrong way.
 
 This is caused by the router freezing on trying to send a pack to filter that
 is requesting a large number of pipeline packs (more than available in the pool).
