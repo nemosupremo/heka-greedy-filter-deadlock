@@ -1,0 +1,12 @@
+[hekad]
+maxprocs = 8
+base_dir = "/tmp/heka/b/cache"
+
+[EagerInput]
+type = "EagerInput"
+
+[GreedyFilter]
+type = "GreedyFilter"
+message_matcher = "Type == 'greedyfilter.input'"
+ticker_interval = 3
+
